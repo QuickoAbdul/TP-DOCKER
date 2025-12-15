@@ -72,3 +72,4 @@ Pour analyser la sécurité des images Docker  vous pouvez utiliser la commande 
 
 3. **Amélioration possible**
 La structure actuelle est la plus optimale avec le temps qui nous était impartis. Il était possible de publier le frontend/backend sur un Repo GitHUB et faire une importation des services afin d'avoir toujours la dernière version, ou mettre en place un pipeline CI/CD,celà permettrait d'alléger encore plus l'image (Actuellement à ~= 190MB).
+Nous pouvions mettre en place également des variables d'environnement pour les ports, la base de données et autres paramètres afin d'améliorer la sécurité et utiliser le mécanisme des variables environment que docker compose fournit.
