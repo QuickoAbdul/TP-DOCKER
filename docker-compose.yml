@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: quickoabdul/tpdocker-frontend:1.0
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  backend:
+    image: quickoabdul/tpdocker-backend:1.0
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/counter-app
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
