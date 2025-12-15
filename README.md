@@ -1,4 +1,4 @@
-# TP - Docker Vue.js/Node.js/MongoDB
+# SHAHZAD ABDUL RAHMAN - TP - Docker Vue.js/Node.js/MongoDB
 
 Ce TP à pour but d'en apprendre plus sur docker. Le TP consiste à créer une application Vue.js avec une API backend en Node.js et une base de données MongoDB, entièrement dockerisée.
 
@@ -10,15 +10,16 @@ Ce TP à pour but d'en apprendre plus sur docker. Le TP consiste à créer une a
 
 ## Structure du Projet
 
-- `vue-project/` : Application Frontend (Vue.js).
-- `backend/` : API Backend (Node.js).
-- `docker-compose.yml` : Orchestration des conteneurs (Frontend, Backend, Mongo).
+- `vue-project/` : Application Frontend 
+- `backend/` : API Backend 
+- `docker-compose.yml` : Orchestration des conteneurs (Frontend, Backend, Mongo)
 
 ## Installation et Démarrage
 1. **Information** : 
-    Il n'est pas forcément nécessaire d'avoir les dossiers backend et frontend. Puisque le `docker-compose.yml` va les importer directement depuis DockerHub.
+    Il n'est pas forcément nécessaire d'avoir les dossiers backend et frontend. Puisque le `docker-compose.yml` va importer l'image des services directement depuis le registry DockerHub.
     
     En cas d'erreur déplacer vous dans les dossiers `backend` et `vue-project` et exécutez `npm install` pour installer les dépendances.
+    Renommé `OLD_docker-compose.yml` en `docker-compose.yml` et utilisez ce fichier pour démarrer les conteneurs.
 
 2.  **Lancement** :
     Déplacez vous & ouvrez un terminal à la racine du projet et exécutez :
@@ -69,7 +70,12 @@ Pour analyser la sécurité des images Docker  vous pouvez utiliser la commande 
     Ces commandes  fournis un rapport détaillé des Common Vulnerabilities and Exposures (CVEs) détectées dans les images.
 
 
-
 3. **Amélioration possible**
 La structure actuelle est la plus optimale avec le temps qui nous était impartis. Il était possible de publier le frontend/backend sur un Repo GitHUB et faire une importation des services afin d'avoir toujours la dernière version, ou mettre en place un pipeline CI/CD,celà permettrait d'alléger encore plus l'image (Actuellement à ~= 190MB).
 Nous pouvions mettre en place également des variables d'environnement pour les ports, la base de données et autres paramètres afin d'améliorer la sécurité et utiliser le mécanisme des variables environment que docker compose fournit.
+
+## Liens externes : 
+Images Docker : 
+- Backend : [quickoabdul/tpdocker-backend](https://hub.docker.com/r/quickoabdul/tpdocker-backend)
+- Frontend : [quickoabdul/tpdocker-frontend](https://hub.docker.com/r/quickoabdul/tpdocker-frontend)
+- MongoDB : [mongo](https://hub.docker.com/_/mongo)
