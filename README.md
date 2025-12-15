@@ -22,6 +22,11 @@ Ce TP à pour but d'en apprendre plus sur docker. Le TP consiste à créer une a
     Renommé `OLD_docker-compose.yml` en `docker-compose.yml` et utilisez ce fichier pour démarrer les conteneurs.
 
 2.  **Lancement** :
+    Clonez le repository git : 
+    ```sh
+    git clone https://github.com/QuickoAbdul/TP-DOCKER.git
+    ```
+
     Déplacez vous & ouvrez un terminal à la racine du projet et exécutez :
     ```sh
     docker-compose up
