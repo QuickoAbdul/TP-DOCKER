@@ -40,7 +40,7 @@ Ce TP à pour but d'en apprendre plus sur docker. Le TP consiste à créer une a
 ## Explication
 
 1. **DockerCompose** :
-    - Le dockerCompose est constitué de 3 services. Il va importer 3 images Docker déjà publier et les exécuter.
+    - Le docker-compose est constitué de 3 services. Il va importer 3 images Docker déjà publier et les exécuter.
 
     - MongoDB qui tourne sur le port default 27017, et qui stocke les données dans un volume.
 
@@ -60,7 +60,7 @@ docker-compose down
 ## Docker Scout & Amélioration possible
 Le projet contient déjà des rapports de sécurité des images Docker.
 
-Pour analyser la sécurité des images Docker  vous pouvez utiliser la commande `docker scout`.
+Pour analyser la sécurité des images Docker vous pouvez utiliser la commande `docker scout`.
 
 1.  **Installation de Docker Scout** :
     Assurez-vous que Docker Scout est installé [Docker Scout](https://docs.docker.com/scout/)
